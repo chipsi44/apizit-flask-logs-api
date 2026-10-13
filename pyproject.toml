@@ -1,0 +1,20 @@
+[project]
+name = "apizit-flask-logs-api"
+version = "1.0.0"
+description = "Standalone Flask API for bounded APIZIT log tests."
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.ruff.format]
+quote-style = "double"
